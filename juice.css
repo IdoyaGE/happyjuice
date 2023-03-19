@@ -1,0 +1,185 @@
+/*Recomendado para web responsive y mejorar la vista en móviles*/
+*, ::before, ::after{
+  margin:0;
+  box-sizing:border-box;
+}
+html {
+    font-size: 1em;
+    box-sizing: border-box;
+}
+/* ESTILO SECCIÓN HEADER: Estilos para el encabezado y menú navegable */
+header {
+  background-color: #fff;
+}
+.navbar a {
+  font-family: 'Montserrat', sans-serif;
+  color:#04bc64;
+  font-size: larger;
+  text-decoration: none;/*elimino los subrayados*/
+  margin: 0;
+  padding: 0;
+  display:flex;
+}
+.navbar li {
+  display:inline-block; /*el menú en fila*/
+  margin-right: 20px;/*margen entre los elementos del menú*/
+  margin-bottom:15px;/*para separarlo de la foto*/
+}
+#logo {
+  width: 200px;/*para regular el tamaño del logo*/
+  height: auto;
+  max-width: 100%;
+  position:relative;
+}
+/*para móviles*/
+@media screen and (max-width: 500px) {
+  #tittles {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/*ESTILO SECCION CLAIM: Foto zumos ocupa todo el expacio*/
+.container {
+  position: relative;
+}
+#portada { 
+  width: 100%;
+  height: auto;
+  opacity:80%;
+  display: inline-block;
+}
+/*ESTILO SECCIÓN ABOUT US: texto justificado, encuadrado, centrado y flexible*/
+
+#aboutus{
+  margin: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: justify;
+  text-align: center;
+}
+img#piña {
+   width: 250px;
+   margin: auto;
+   display: block;
+}
+/*SECCIÓN ICONS: Foto con tres iconos verdes y lista de propiedades sin puntos del listado*/
+#properties{
+  margin: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: justify;
+  text-align: center;
+  list-style: none;
+}
+
+/*SECCION: BUSCADOR DE RECETAS: CSS para los elementos del HTML, el de las recetas tiene su propio CSS*/
+
+#juice-list{
+  margin-top:5%;
+  margin-bottom:5%;/*márgenes de arriba y abajo del buscador*/
+}
+
+/*Estilo CSS del placeholder*/
+
+#recipes{
+    margin-top:10px;
+    margin-bottom: 10px;
+    margin: 20px;
+    border: 3px solid #918f82;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    text-align: center;
+    background-color: #e7e5e4;
+}
+
+#ingredient-search{
+    border-radius: 0px;
+    border-color: #fff;
+    font-family:'Montserrat', sans-serif;
+    text-align: center;
+    background-color:#fff;
+    margin-left:20px;/*para separar los tres elementos del buscador*/
+    margin-right: 20px;/*para separar los tres elementos del buscador*/
+    position:center;
+}
+ /*Estilo CSS del button del buscador*/
+
+#searchjuice{
+  font-family:'Montserrat', sans-serif;
+  background-color: #04bc64;
+  border:none;
+  border-radius: 15px;
+ }
+
+/*SECCION LEARN: Estilo para las imágenes del blog*/
+/*Para colocarlas en una fila de tres fotos*/
+.image-container {
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+  flex: 1 1 30%;
+  margin: 10px;
+}
+/*Para que sea flexible y sea visible cuando cambiemos de pantalla y se visualicen modo columna*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  opacity:80%;
+}
+#lima{
+  width:75px;
+  height:auto;
+}
+#clicktext{
+  color:#04bc64;
+  text-decoration: bold;
+  margin-left: 10px;
+  font-family:'Montserrat', sans-serif;
+}
+
+/*para verlo bien en todas las pantallas (en columna de una en una)*/
+@media screen and (max-width: 768px) {
+  .image-container {
+    flex: 1 1 45%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .image-container {
+    flex: 1 1 100%;
+  }
+}
+
+/*ESTILO CSS FOOTER: centrado, con tamaño de iconos pequeños obtenidos en Canva*/
+
+footer {
+  background-color: #eeebeb;
+  text-align: center;
+  padding: 20px;
+  bottom: 0;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+  font-size: 14px;
+}
+footer p {
+  font-size: 14px;
+  margin: 10px;
+  color: #2e2d22;
+}
+#email{
+  width:40px;
+  height:auto;
+}
+#phone{
+  width:40px;
+  height:auto;
+}

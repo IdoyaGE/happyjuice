@@ -1,0 +1,58 @@
+#juice-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #imagerecipe{ /*.juice*/
+    border-radius: 15px;
+    margin-top:5px;
+    margin-bottom: 5px;
+    text-align: center;
+    border: 3px solid #04bc64;
+    max-width: auto;
+    max-height:auto;
+    margin-left: 2px;
+    margin-right:2px;
+    overflow: hidden;
+    display:block;
+    text-align:center;
+  }
+  #labelrecipe{/*.juice.h2*/
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 10px;
+  }
+  #ingredientsrecipe{/*#juice-list p*/
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 10px;
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  #urlrecipe{
+    text-decoration: none;
+    color:#04bc64;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: larger;
+    margin-top: 5px;
+    margin-bottom:5px;
+  }
+  @media only screen and (min-width: 600px) {
+    .juice {
+      width: calc(50% - 20px);
+    }
+  }
+  @media only screen and (min-width: 800px) {
+    .juice {
+      width: calc(33.33% - 20px);
+    }
+  }
+  
