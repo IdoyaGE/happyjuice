@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--HEAD: He creado el link para dar estilo CSS a la web y he incluido Google Fonts Montserrat y el link de iconos awesome que utilizo en el footer-->
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Juice</title>
+    <link href="juice.css" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+<!--HEADER: He creado un logo en Canva (no és un limón, es una lima :) y un menú sencillo navegable por tres secciones(quienes somos, recetas y blog)-->
+  <header>
+    <nav class="navbar">
+      <a href="#logohj"><img id="logo" src="image/logosinfondo.png" alt="Happy Juice logo"></a>
+        <ul id="navbar">
+            <li><a href="#aboutus">About Us</a></li>
+            <li><a href="#recipes">Recipes</a></li>
+            <li><a href="#learn">Learn</a></li>
+          </ul>
+    </nav>
+  </header>
+
+  <body>
+<!--SECCION PORTADA: Imagen zumos (inicialmente puse un claim en la foto, pero lo he descartado)-->
+      <section id="claim">
+        <div class="container">
+          <img id="portada" src="image/Portada.jpg" alt="Fruits and juices photo">
+        </div>
+      </section>
+<!--SECCION ABOUT US: Incluye varios párrafos intercalados con títulos y una imagen con iconos y las propiedades de los zumos-->
+      <section id="aboutus">
+        <p>Our happy juices allow your body to break from stress, repair and replenish itself, expelling unhealthy substances and rebuilding the nutrient profile.</p><br>
+        <h3><b>With our happy juices we want to take care of you.</b></h3><br>
+        <img id="piña" src="image/piñasinfondo.png" alt="Fruits and juices photo">
+        <p>Just like our cars need regular maintenance, our organs need a deep cleanse to improve their functioning.<br><br></p>
+        <h3><b>Learn juice recipes and lead a healthier life full of fruits and vegetables.</b></h3>
+      </section>
+      <section class="icons">
+        <div class="icons_container">
+          <img id="icons" src="image/icons.png" alt="Fruits and vegetables in a jar">
+          <ul id="properties">
+            <li>No added sugar or artificial additives</li><br>
+            <li>Fresh and 100% natural fruit and vegetables</li><br>
+            <li>Alcoholic free</li><br>
+            <li>Taste delicious and fresh</li><br>
+          </div>
+        
+      </section>
+<!--SECCION RECIPES: Consiste en un buscador de zumos en el que eliges un ingrediente y te lleva a diferentes recetas para hacerlas en casa-->
+      
+      <section id="recipes">
+        <link href="recipes.css" rel="stylesheet" >
+        <div id="juice-list">
+          <label for="ingredient-search">Choose your favourite ingredient:</label><br><br>
+          <input type="text" id="ingredient-search">
+          <button target="_blank" id="searchjuice" onclick="searchRecipes()">Search juices</button>
+          <script src="juice.js"></script><!--Lo he colocado al final para que no haya problemas con el Listener al evento-->
+        </div>
+      </section>
+
+ <!--SECCION LEARN: He creado varios post en otro HTML sobre los beneficios de los zumos y lo he enlazado al HTML principal-->
+    
+    <section id="learn">
+      <p id="clicktext">Click on the fruit of the <b>BLOG</b> article you are interested in:</p><br><br>
+      <div class="container">
+          <div class="image-container">
+          <img src="image/carrots.jpg" alt="Carrots">
+          <h3>The benefits of juice cleanse</h3>
+          <a href="blog.html"><b><img src="image/lima.png" id="lima"alt="Lima"></b></a>
+        </div>
+        <div class="image-container">
+          <img src="image/bottles.jpg" alt="Bottles of juice">
+          <h3>How to prepare for a juice cleanse</h3>
+          <a href="blog.html"><b><img src="image/lima.png" id="lima"alt="Lima"></b></a>
+        </div>
+        <div class="image-container">
+          <img src="image/greenjuice.jpg" alt="Green juice with vegetables and fruits">
+          <h3>The power of green juice</h3>
+          <a href="blog.html"><b><img src="image/lima.png" id="lima"alt="Lima"></b></a>
+        </div>
+      </div>
+    </section>  
+
+<!--SECCION NEWSLETTER: He creado una suscripción a la newsletter, para que reciba el usuario con campañas de email marketing las últimas novedades-->
+<!--He enlazado con el CSS y JS de la newsletter y guardado los mails en el LocalStorage-->
+    <section id="newsletter">
+     <link href="newsletter.css" rel="stylesheet"></a>
+      <img src="image/watermelonseat.jpg" id="seat" alt="A seat with a watermelon design">
+      <p>Sit down and enjoy</p><br>
+      <h3>NEWSLETTER</h3><br>
+      <p>Receive in your mail all the news of our juice recipes</p><br>
+      <form id="newsletter-form">
+        <label for="email-input"></label>
+        <input type="email" id="email-input" name="email" placeholder="gmail@gmail.com" required>
+        <button type="submit" id="submit-button">Subscribe</button>
+      </form>
+      <p id="error-message"></p>
+      <script src="newsletter.js"></script>
+    </section>
+
+<!--FOOTER: Sencillo, no tengo de momento redes sociales :)-->
+  <footer> 
+    <div class="contact">
+      <img src="image/emailicon.png" id="email" alt="Email icon">
+      <p><b> igearkabaia@gmail.com</b><p><br>
+        <img src="image/phoneicon.png" id="phone" alt="Phone icon">
+      <p><b> +34 652705481</b><p><br>
+      <p>Copyright HappyJuice2023©</p>
+    </div>
+  </footer>
+ </body>
+</html>

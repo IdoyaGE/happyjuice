@@ -1,0 +1,47 @@
+/*Estilo para el encabezado del blog*/
+header {
+  background-color:#eeebeb;
+  color: #04bc64;
+  text-align: center;
+  padding: 10px;
+  margin-top: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+#logo {
+  width: 150px; 
+  border-radius: 15px;
+}
+/*Estilo para los post*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: #eeebeb ;
+  }
+article {
+    margin: 20px;
+    border: 2px solid #3dcd80;
+    padding: 10px;
+    background-color:#fff;
+    color:#2e2d22
+  }
+h2 {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+    color: #2e2d22;
+    text-align: center;
+  }
+  /*Imágenes del blog*/
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  /*para que se vea correctamente en el móvil*/
+@media (max-width: 768px) {
+article {
+      margin: 10px;
+    }
+  }
+  
